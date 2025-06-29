@@ -3,256 +3,103 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gouse Jaheer Syed - Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Gouse Jaheer Syed | Developer Portfolio</title>
+    <!-- Professional Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<body>
+<!-- Header -->
 <header class="header">
-    <!-- Logo Left -->
-    <nav class="navbar-exact">
-        <!-- content here -->
-
-        <style>
-            * {
-            }
-
-            body {
-                font-family: 'Poppins', sans-serif;
-            }
-
-            .logo {
-                font-family: 'Playfair Display', serif;
-                font-size: 29px;
-                font-weight: 700;
-                letter-spacing: 3px;
-                color: #000;
-                padding-left: 60px;
-            }
-
-            .nav-links {
-                display: flex;
-                gap: 35px;
-            }
-
-            .nav-links a {
-                text-decoration: none;
-                color: #000;
-                font-size: 16px;
-                font-weight: 500;
-                transition: color 0.3s ease;
-            }
-
-            .nav-links a:hover {
-                color: #007bff;
-            }
-
-            .menu-toggle {
-                display: none;
-                flex-direction: column;
-                cursor: pointer;
-            }
-
-            .menu-toggle span {
-                height: 3px;
-                width: 25px;
-                background: black;
-                margin: 4px 0;
-                transition: 0.3s;
-            }
-
-            @media (max-width: 768px) {
-                .nav-links {
-                    display: none;
-                    flex-direction: column;
-                    position: absolute;
-                    top: 70px;
-                    right: 30px;
-                    background: white;
-                    padding: 20px;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    width: max-content;
-                }
-
-                .nav-links.active {
-                    display: flex;
-                }
-
-                .menu-toggle {
-                    display: flex;
-                }
-            }
-        </style>
+    <div class="container">
+        <div class="logo">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <body>
-        <nav class="navbar">
-            <div class="logo">PORTFOLIO</div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav-links" id="navLinks">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#internship">Internship</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
+    </div>
+</header>
 
-        <script>
-            function toggleMenu() {
-                document.getElementById("navLinks").classList.toggle("active");
-            }
-        </script>
-
-        <!-- Hero Section -->
-        <header class="hero" id="home">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Hi, Myself<br>Gouse Jaheer Syed</h1>
-                    <p class="title">I'm a Frontend Developer</p>
-                    <p class="description">
-                        Computer Science student with strong skills in Web Development, Problem-Solving, and a passion for learning new technologies. Experienced in building real-world projects and exploring areas like Web Development and Machine Learning.
-                    </p>
-
-
-                    <!-- Social icons -->
-                    <div class="social-icons">
-                        <a href="mailto:sgousejaheer@gmail.com" target="_blank" aria-label="Email">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/gouse-jaheer-syed-788211350/" target="_blank" aria-label="LinkedIn">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
-                        </a>
-                        <a href="https://github.com/gousejaheer-syed" target="_blank" aria-label="GitHub">
-                            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
-                        </a>
-                    </div>
-
-                    <!-- Download CV Button -->
-                    <a href="your-cv.pdf" download class="download-cv" aria-label="Download CV">
-                        <span class="download-text">Download</span> CV
-                    </a>
-                </div>
-
-            </div>
-        </header>
-
-
-<!-- About Section -->
-    <section id="about" class="section" style="background-color: #F9FAFB;">
-    <h2>About Me</h2>
-    <p>
-        I’m Gouse jaheer, a developer and community builder. I'm a Computer Science student at BVC Engineering College with a strong academic foundation, including a diploma from KIET and an SSC GPA of 9.8. I'm passionate about exploring new technologies and have solid skills in C++, Java, Python, and JavaScript. I've developed impactful projects such as a home food delivery platform for hostelers away from home and a live fire detection deep learning model.
-    </p>
-        <!-- Read More Button -->
-    <a href="#home" class="read-more-btn" aria-label="Read More">
-        <span class="download-text">Read more</span>
-    </a>
-</section>
-
-</body>
-<section id="skills" style="padding: 40px 20px; max-width: 1000px; margin: auto;">
-    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px;">Skills</h2>
-
-    <div class="skills-wrapper">
-        <!-- Programming Languages -->
-        <div class="skill-box">
-            <h3>Programming Languages</h3>
-            <p>Java, C++, SQL, Python</p>
-        </div>
-
-        <!-- Web Technologies -->
-        <div class="skill-box">
-            <h3>Web Technologies</h3>
-            <p>HTML, CSS, JavaScript</p>
-        </div>
-
-        <!-- Tools -->
-        <div class="skill-box">
-            <h3>Tools</h3>
-            <p>VS Code, Git</p>
-        </div>
-
-        <!-- Libraries -->
-        <div class="skill-box">
-            <h3>Libraries</h3>
-            <p>NumPy, Pandas, Scikit-Learn</p>
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Hi, Myself</h2>
+            <h1>Gouse Jaheer Syed</h1>
+            <h3>I'm a Frontend Developer</h3>
+            <p>Computer Science student with strong skills in Web Development,  Problem-Solving, and a passion for learning new technologies. Experienced in building real-world projects and exploring areas like Web Development and Machine Learning.</p>
+            <button class="download-btn">Download CV</button>
         </div>
     </div>
+</section>
 
-    <!-- Responsive Styles -->
-    <style>
-        .skills-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I'm Gouse jaheer, a developer and community builder. I'm a Computer Science student at BVC Engineering College with a strong academic foundation, including a diploma from KIET and an SSC GPA of 9.8. I'm passionate about exploring new technologies and have solid skills in C++, Java, Python, and JavaScript. I've developed impactful projects such as a home food delivery platform for hostelers away from home and a live fire detection deep learning model.</p>
+    </div>
+</section>
 
-        .skill-box {
-            flex: 1 1 calc(50% - 20px);
-            background-color: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-sizing: border-box;
-            min-width: 260px;
-        }
-
-        .skill-box h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-        }
-
-        .skill-box p {
-            margin: 0;
-            font-size: 0.95rem;
-            color: #333;
-        }
-
-        @media (max-width: 600px) {
-            .skill-box {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>Java, C++, SQL, Python</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Technologies</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>VS Code, Git</p>
+            </div>
+            <div class="skill-card">
+                <h3>Libraries</h3>
+                <p>NumPy, Pandas, Scikit-Learn</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="section projects-section">
-    <h2>Projects</h2>
-
-    <!-- Project Cards Grid -->
-    <div class="projects-grid">
-
-        <!-- Project 1 -->
-        <div class="project-box">
-            <h3>Crypto Tracker</h3>
-            <p>A responsive MERN Stack web app that tracks cryptocurrency prices and market trends in real-time.</p>
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Crypto Tracker</h3>
+                <p>A responsive MERN Stack web app that tracks cryptocurrency prices and market trends in real-time.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio showcasing my work, skills, and internships, built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A sleek, real-time weather forecasting app using OpenWeather API and JavaScript with responsive UI design.</p>
+            </div>
         </div>
-
-        <!-- Project 2 -->
-        <div class="project-box">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio showcasing my work, skills, and internships, built using HTML, CSS, and JavaScript.</p>
-        </div>
-
-        <!-- ✅ Project 3 (New) -->
-        <div class="project-box">
-            <h3>Weather App</h3>
-            <p>A sleek, real-time weather forecasting app using OpenWeather API and JavaScript with responsive UI design.</p>
-        </div>
-
     </div>
 </section>
 
@@ -271,9 +118,9 @@
 
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-family: 'Inter', sans-serif; font-size: 1rem;">
 
-        <a href="mailto:sgousejaheer@gmail.com" style="text-decoration: none; color: #111827; display: flex; align-items: center; gap: 8px;">
+        <a href="mailto:gousejaheerb@gmail.com" style="text-decoration: none; color: #111827; display: flex; align-items: center; gap: 8px;">
             <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width:20px; height:20px;" />
-            sgousejaheer@gmail.com
+            gousejaheerb@gmail.com
         </a>
 
         <a href="tel:+919989845378" style="text-decoration: none; color: #111827; display: flex; align-items: center; gap: 8px;">
@@ -346,3 +193,7 @@
 </footer>
 
 </body>
+
+<script src="back.js"></script>
+</body>
+</html>
